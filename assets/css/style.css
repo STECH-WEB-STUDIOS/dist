@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  background-color: white !important;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oswald-heading {
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+
+.small-nav-items{
+  position: absolute;
+  right: 0 !important;
+  z-index: 2;
+  margin-top: 65px;
+  clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) !important;
+  padding: 8px 30px !important;
+  font-size: 14px;
+}
+
+nav {
+  position: sticky !important;
+  top: 0 !important;
+}
+
+.polygon-head{
+  clip-path: polygon(0% 0, 88% 0, 100% 100%, 0 100%) !important;
+}
+
+.prgrm-card:hover {
+  border: 1px solid #A20000;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+@media (max-width: 1200px) {
+  #menu-toggle {
+    display: block;  /* Show hamburger */
+  }
+  #menu {
+    display: none;   /* Hide nav items */
+  }
+}
+
+
+@media (max-width: 1700px) {
+  .dept-cards {
+    padding: 90px !important;
+  }
+}
+
+@media (max-width: 872px) {
+  .dept-cards {
+    padding: 40px !important;
+  }
+}
+@media (max-width: 576px) {
+  .dept-cards {
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 380px) {
+    .nav1{
+        font-size: 10px;
+    }
+    .nav1-items {
+        font-size: 10px;
+        padding: 5px 10px !important;
+        margin-top: 70px;
+    }
+    .nav1-items a {
+      margin-right: -5px !important;
+    }
+    .polygon-head{
+        font-size: 16px !important;
+        width: 75% !important;
+    }
+}
