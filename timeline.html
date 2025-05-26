@@ -380,41 +380,260 @@
         </div>
 
         <!-- Dropdown for Small Screens -->
-        <div id="mobile-menu" class="hidden flex-col bg-gray-100 px-5 shadow-md">
-            <a href="#" class="relative block text-gray-800 w-full text-center py-2 font-semibold group">
-                <i class="fas fa-home mr-2"></i> <!-- Font Awesome Home Icon -->
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+        <div id="mobile-menu" class="hidden flex-col bg-gray-100 px-10 py-2 shadow-md max-h-[80vh] overflow-y-auto">
+            <a href="#" class="block text-gray-800 py-2 font-semibold text-left">
+                <i class="fas fa-home mr-2"></i> Home
             </a>
-            <a href="#about" class="relative block text-gray-800 w-full text-center py-2 group">About
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#admissions" class="relative block text-gray-800 w-full text-center py-2 group">Admissions
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#academics" class="relative block text-gray-800 w-full text-center py-2 group">Academics
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#community" class="relative block text-gray-800 w-full text-center py-2 group">Community
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#student-services" class="relative block text-gray-800 w-full text-center py-2 group">Student Services
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#placement" class="relative block text-gray-800 w-full text-center py-2 group">Placement
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#campus-life" class="relative block text-gray-800 w-full text-center py-2 group">Campus Life
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#iqac" class="relative block text-gray-800 w-full text-center py-2 group">IQAC
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#information-center" class="relative block text-gray-800 w-full text-center py-2 group">Information Center
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
-            <a href="#contact" class="relative block text-gray-800 w-full text-center py-2 group">Contact
-                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4D0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-            </a>
+
+            <!-- About with Submenu -->
+            <div class="w-full">
+                <button onclick="document.getElementById('about-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>About</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="about-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">About DiST</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Vision, Mission & Values</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Motto & Tagline</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Our Heritage</a>
+
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('admin-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Administration</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="admin-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Provincial Council</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Governing/Sponsoring Body</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Administrative Body</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Advisory Council</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Former Management</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Organisation Chart</a>
+
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('approvals-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Approvals & Certifications</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="approvals-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">AICTE</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Mahatma Gandhi University</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Government NOC</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">NAAC Accreditation</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">ISO Certification</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Trademark</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Minority</a>
+                        </div>
+                    </div>
+
+                    <a href="timeline.html" class="block py-2 text-sm text-gray-800 text-left hover:underline">Milestones</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Policies</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Code of Conduct</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">RTI</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Financial Audit Report</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Development Plan</a>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <button onclick="document.getElementById('admissions-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>Admissions</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="admissions-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Notifications</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Admission Procedure</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Why DiST?</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Fee Refund Policy</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">International Students Admission Procedure</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Location - Ambience</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">F A Q ?</a>
+                </div>
+            </div>
+            
+            <div class="w-full">
+                <button onclick="document.getElementById('academics-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>Academics</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="academics-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('dep-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Departments</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="dep-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">School of Computer Science</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">School of Social Work</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">School of Management</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">School of Commerce</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">School of Media and Communication</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">School of English</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Programmes</a>
+
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('research-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Research</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="research-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Research Center</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Research Policy</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Journal DJSR</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Consultancy Projects</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Incubation Center</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Industrial and Foreign Collaborations</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Central Facilities</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Educational Methodology</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Library</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Computer Lab</a>
+
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('media-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Media Lab</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="media-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Audio Studio</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Editing Suite</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Digital Studio</a>
+                        </div>
+                    </div>
+
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('animation-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Animation Lab</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="animation-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Art Lab</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">2D Animation Lab</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Stop Motion Lab</a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('centers-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Centers</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="centers-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">DCRD (Research & Development)</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">IGNOU</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">De Paul Extension Services</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Legal Service</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Calender</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Hand Book</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">OBE Manual</a>
+                </div>
+            </div>
+            
+            <div class="w-full">
+                <button onclick="document.getElementById('community-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>Community</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="community-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Head Of Department</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Teaching Staff</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Non-Teaching Staff</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Counsellors</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Professional Educators</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Committees</a>
+
+                    <div class="mt-1">
+                        <button onclick="document.getElementById('associations-submenu').classList.toggle('hidden')" class="w-full py-2 text-sm text-gray-800 text-left">
+                            <span>Associations</span>
+                            <i class="fas fa-chevron-right ml-2 text-xs"></i>
+                        </button>
+                        <div id="associations-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Innovision & AUGMENTA (Computer Science)</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">SADESS (Social Work)</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Finzone, Marketrics & Zum (Management)</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Club Beta & Intenza (Commerce)</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Swa.Le & AVAS (Media & Communication)</a>
+                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">LITE VISTA (English)</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Clubs</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Alumni</a>
+                </div>
+            </div>
+            
+            <div class="w-full">
+                <button onclick="document.getElementById('student-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>Student Services</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="student-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">National Service Scheme</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">IEDC</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">NISP</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">School Of Professional Development</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Value Education</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Counselling Services</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Student Exchange Programme</a>
+                </div>
+            </div>
+            
+            <a href="#placement" class="block w-full py-2 text-gray-900 font-medium flex items-center text-left hover:underline">Placement</a>
+
+            <div class="w-full">
+                <button onclick="document.getElementById('campus-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>Campus Life</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="campus-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Housing And Dining</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Transportation Facility</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Media Gallery</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Sports And Games</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Fitness Center</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Facilities For Differently Abled</a>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <button onclick="document.getElementById('iqac-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>IQAC</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="iqac-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Vision, Mission & Objectives</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Strategies</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Functions</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Benefits</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Reports</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">AQAR</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Members</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Gender Action Plan</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Student Satisfaction Survey</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Best Practices</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Institutional Distinctiveness</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Undertaking</a>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <button onclick="document.getElementById('info-submenu').classList.toggle('hidden')" class="w-full py-2 text-gray-900 font-medium flex items-center text-left">
+                    <span>Information center</span><i class="fas fa-chevron-down ml-2 text-xs"></i>
+                </button>
+                <div id="info-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">News & Events</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Circulars</a>
+                    <a href="#" class="block py-2 text-sm text-gray-800 text-left hover:underline">Careers</a>
+                </div>
+            </div>
+            
+            <a href="#contact" class="block w-full py-2 text-gray-900 font-medium flex items-center text-left hover:underline">Contact</a>
+            
         </div>
     </nav>
 
@@ -527,10 +746,7 @@
     
 
     <footer class="text-white pt-12 bg-gradient-to-r from-[#4D0000] via-[#A20000] to-[#4D0000] text-white">
-
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 p-10">
-            
-            <!-- Get in Touch -->
             <div class="text-sm text-center sm:text-center md:text-left">
                 <h2 class="text-xl font-bold mb-4 ">GET IN TOUCH</h2>
                 <p class="mb-3 ">
@@ -560,7 +776,6 @@
                 </div>
             </div>
 
-            <!-- Online Service -->
             <div class="text-md text-center sm:text-center md:text-left">
                 <h2 class="text-xl font-bold mb-4">ONLINE SERVICE</h2>
                 <ul class="space-y-2">
@@ -575,7 +790,6 @@
                 </ul>
             </div>
 
-            <!-- Useful Links -->
             <div class="text-md text-center sm:text-center md:text-left">
                 <h2 class="text-xl font-bold mb-4">USEFUL LINKS</h2>
                 <ul class="space-y-2">
@@ -596,8 +810,9 @@
         </div>
     </footer>
     
-
     <script src="assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Add AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
