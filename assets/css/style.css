@@ -43,6 +43,66 @@ nav {
   border: 1px solid #A20000;
 }
 
+/* Custom bullet point */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.styled-list {
+  counter-reset: custom-counter;
+  list-style: none; /* Removes default numbers */
+  position: relative;
+}
+
+.styled-list > li {
+  counter-increment: custom-counter;
+  position: relative;
+  padding-left: 2.5em; /* Make space for custom marker */
+}
+
+.styled-list > li::before {
+  content: counter(custom-counter);
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  background-color: #A20000; /* Tailwind red-900 */
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+  border-radius: 50%; /* Full circle */
+}
+
+/* Custom bullet style */
+.fa-bullet {
+  list-style: none; /* remove default bullets */
+  padding-left: 1rem; /* preserve spacing */
+}
+
+.fa-bullet li {
+  position: relative;
+  padding-left: 1.2rem; /* space for the icon */
+}
+
+.list-bullet li::before {
+  content: "\f02e"; /* Font Awesome icon (fa-angle-right) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* Required for solid icons */
+  position: absolute;
+  left: 0; /* Tailwind blue-600 */
+  color: #191919 !important
+}
+
+.book-bullet li::before {
+  content: "\f02d"; /* Font Awesome icon (fa-angle-right) */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900; /* Required for solid icons */
+  position: absolute;
+  left: 0; /* Tailwind blue-600 */
+  color: #8b0000 !important
+}
+
 @keyframes scroll {
   0%   { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
