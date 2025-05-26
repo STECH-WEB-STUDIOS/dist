@@ -16,6 +16,10 @@ body {
   font-style: normal !important;
 }
 
+a {
+  cursor: pointer !important;
+}
+
 .small-nav-items{
   position: absolute;
   right: 0 !important;
