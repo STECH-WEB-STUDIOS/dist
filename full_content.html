@@ -638,20 +638,20 @@
     </nav>
 
     <div class="text-center bg-gradient-to-r from-[#4D0000] via-[#A20000] to-[#4D0000] text-white py-4">
-        <h3 class="text-2xl font-bold oswald-heading">LIBRARY</h3>
+        <h3 class="text-3xl font-bold oswald-heading">MAIN HEADING</h3>
     </div>
 
-    <section class="bg-gray-100 py-10 space-y-16">
+    <section class="py-10 space-y-16">
         <div class="max-w-7xl mx-auto px-6">
             <!-- Full-Width 16:9 Image -->
-            <div class="w-full p-5">
+            <div class="w-full">
                 <!-- Image with visible ratio label -->
                 <img src="https://placehold.co/1600x500?text=16:5" alt="Banner 16:5" class="w-full object-cover" />
             </div>
 
             <!-- Section 1: Left-Aligned Image -->
-            <div class="mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">About the Department</h2>
+            <div class="mx-auto">
+                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 mt-10 border-b-2 border-gray-300">Left Aligned Image</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-1 gap-6 items-start">
                     <p class="text-gray-700 text-justify text-base leading-relaxed">
@@ -673,7 +673,7 @@
                     </p>
                 </div>
 
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300 mt-12">Facilities and Resources</h2>
+                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 mt-14 border-b-2 border-gray-300">Right Aligned Image</h2>
 
                 <div class="grid grid-cols-1 md:grid-cols-1 gap-6 items-start">
                     <p class="text-gray-700 text-justify text-base leading-relaxed">
@@ -695,8 +695,8 @@
 
             </div>
             
-            <div class="mx-auto px-4 sm:px-6 lg:px-8 mt-14">
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Activities</h2>
+            <div class="mx-auto">
+                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 mt-14 border-b-2 border-gray-300">Images with Caption</h2>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Image 1 -->
@@ -730,32 +730,80 @@
     </section>
 
 
-    <section class="bg-gray-100 py-10 space-y-16">
+    <section class="py-10 space-y-16 mb-16">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Library Resources</h2>
+            <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Ordered List with Collapse</h2>
+            
+            <ol class="styled-list list-decimal ml-6 space-y-4 text-gray-800">
+                <li class="mb-6">
+                    <details class="collapse border-t border-gray-300 shadow-lg pb-4 pr-4">
+                        <summary class="collapse-title font-semibold text-red-900">
+                            <div class="flex w-full items-center justify-between">
+                                Whether any capitation or donation is required?
+                                <i class="fas fa-angle-down text-lg"></i>
+                            </div>
+                        </summary>
+                        <div class="collapse-content text-md text-gray-900 ml-3 border border-gray-300 rounded-md p-3">
+                            No donation or capitation is required. The selection of students is purely based on 'First Come First Served' policy. No external agencies are entrusted with any kind of admission procedures.
+                        </div>
+                    </details>
+                </li>
+              
+                <li class="mb-6">
+                    <details class="collapse border-t border-gray-300 shadow-lg pb-4 pr-4">
+                        <summary class="collapse-title font-semibold text-red-900">
+                            <div class="flex w-full items-center justify-between">
+                                What documents are needed for admission?
+                                <i class="fas fa-angle-down text-lg"></i>
+                            </div>
+                        </summary>
+                        <div class="collapse-content text-md text-gray-900 ml-3 border border-gray-300 rounded-md p-3">
+                            You will need your SSLC mark sheet, transfer certificate, community certificate (if applicable), and passport-sized photographs.
+                        </div>
+                    </details>
+                </li>
+              
+                <li class="mb-6">
+                    <details class="collapse border-t border-gray-300 shadow-lg pb-4 pr-4">
+                        <summary class="collapse-title font-semibold text-red-900">
+                            <div class="flex w-full items-center justify-between">
+                                Is there any entrance exam?
+                                <i class="fas fa-angle-down text-lg"></i>
+                            </div>
+                        </summary>
+                        <div class="collapse-content text-md text-gray-900 ml-3 border border-gray-300 rounded-md p-3">
+                            No entrance exam is required. Admission is based on merit and the order of application.
+                        </div>
+                    </details>
+                </li>
+              </ol>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Ordered List</h2>
             
             <ol class="styled-list list-decimal ml-6 space-y-4 text-gray-800">
                 <li>
-                  <span class="text-lg font-semibold text-red-900">Books</span>
-                  <ul class="list-disc ml-6 text-gray-900">
-                    <li>Printed</li>
-                    <li>E-Books</li>
-                  </ul>
+                    <span class="text-lg font-semibold text-red-900">Books</span>
+                    <ul class="list-disc ml-5 mt-2 text-gray-900">
+                        <li>Printed</li>
+                        <li>E-Books</li>
+                    </ul>
                 </li>
                 <li>
-                  <span class="text-lg font-semibold text-red-900">Periodicals</span>
-                  <ul class="list-disc ml-6 text-gray-900">
-                    <li>Journals (International & National)</li>
-                    <li>Magazines</li>
-                    <li>Newsletters</li>
-                  </ul>
+                    <span class="text-lg font-semibold text-red-900">Periodicals</span>
+                    <ul class="list-disc ml-5 mt-2 text-gray-900">
+                        <li>Journals (International & National)</li>
+                        <li>Magazines</li>
+                        <li>Newsletters</li>
+                    </ul>
                 </li>
                 <li>
-                  <span class="text-lg font-semibold text-red-900">Databases</span>
-                  <ul class="list-disc ml-6 text-gray-900">
-                    <li>Subscribed</li>
-                    <li>Open access</li>
-                  </ul>
+                    <span class="text-lg font-semibold text-red-900">Databases</span>
+                    <ul class="list-disc ml-5 mt-2 text-gray-900">
+                        <li>Subscribed</li>
+                        <li>Open access</li>
+                    </ul>
                 </li>
                 <li><span class="text-lg font-semibold text-red-900">Newspapers</span></li>
                 <li><span class="text-lg font-semibold text-red-900">Project Reports</span></li>
@@ -767,7 +815,7 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Loan Criteria</h2>
+            <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Table Heading</h2>
             <div class="flex flex-col justify-center h-full">
                 <!-- Table -->
                 <div class="w-full max-w-5xl mx-auto bg-gray-100 shadow-lg rounded-xl">
@@ -858,39 +906,37 @@
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">
-              Library Services
-            </h2>
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Unordered List</h2>
           
             <div class="space-y-2">
                 <ul class="fa-bullet book-bullet list-inside">
-                    <li>
+                    <li class="mb-6">
                       <h3 class="text-xl font-bold text-red-900 mb-1">Book Lending Service / Circulation</h3>
                       <p>Library provides open access for all books to its Students, Faculty, and Staff.</p>
                     </li>
                   
-                    <li>
+                    <li class="mb-6">
                       <h3 class="text-xl font-bold text-red-900 mb-1">Book Reservation</h3>
                       <p>Books can be reserved at the circulation desk or through the intranet if they are not available on the shelf.</p>
                     </li>
                   
-                    <li>
+                    <li class="mb-6">
                       <h3 class="text-xl font-bold text-red-900 mb-1">Reference Service</h3>
                       <p>In-person assistance is provided by the library to help users fulfil their information needs.</p>
                     </li>
                   
-                    <li>
+                    <li class="mb-6">
                       <h3 class="text-xl font-bold text-red-900 mb-1">User Guidance Service</h3>
                       <p>A Library Orientation Programme is conducted to introduce new members to the library's resources.</p>
                     </li>
                   
-                    <li>
+                    <li class="mb-6">
                       <h3 class="text-xl font-bold text-red-900 mb-1">Databases Training Support</h3>
                       <p>Workshops and training programs are offered to promote self-reliant learning and database proficiency.</p>
                     </li>
                   
-                    <li>
+                    <li class="mb-6">
                       <h3 class="text-xl font-bold text-red-900 mb-1">Reprographic Service</h3>
                       <p>Photocopying is available through the reprographic centre at ₹ 1 per page.</p>
                     </li>

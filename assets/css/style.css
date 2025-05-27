@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background-color: white !important;
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -33,6 +32,19 @@ a {
 nav {
   position: sticky !important;
   top: 0 !important;
+}
+
+section {
+  background-color: #f6f3f4 !important;
+}
+
+.modal-box::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-box {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .polygon-head{
@@ -103,6 +115,24 @@ nav {
   color: #8b0000 !important
 }
 
+.disc-bullet li::before {
+  content: "\f111"; /* Font Awesome icon (fa-angle-right) */
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  font-size: 8px !important;
+  margin-top: 4px !important;
+  left: 0; /* Tailwind blue-600 */
+  color: #191919 !important
+}
+
+details summary div i {
+  transition: transform 0.3s ease;
+}
+
+details[open] summary div i {
+  transform: rotate(180deg);
+}
+
 @keyframes scroll {
   0%   { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
@@ -136,19 +166,27 @@ nav {
   .dept-cards {
     padding: 20px !important;
   }
+  .small-nav-items {
+        font-size: 12px;
+        padding: 5px 10px !important;
+        margin-top: 70px;
+    }
+  li {
+    margin-left: -25px !important;
+  }
 }
 
 @media (max-width: 380px) {
-    .nav1{
+    .small-nav{
         font-size: 10px;
     }
-    .nav1-items {
+    .small-nav-items {
         font-size: 10px;
         padding: 5px 10px !important;
         margin-top: 70px;
     }
-    .nav1-items a {
-      margin-right: -5px !important;
+    .small-nav-items a {
+      margin-right: 5px !important;
     }
     .polygon-head{
         font-size: 16px !important;
