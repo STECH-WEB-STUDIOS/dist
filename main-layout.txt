@@ -1,0 +1,38 @@
+<section class="main-content p-5 bg-gray-100 flex flex-col lg:flex-row gap-5">
+        <!-- Left Sidebar (Optional) -->
+        <div class="left border-2 border-gray-300 p-5 rounded-lg order-2 lg:order-1 lg:w-1/5 flex-shrink-0 lg:block">
+          <h3 class="text-2xl font-bold text-[#A20000] mb-4">Left Sidebar</h3>
+          <ul class="fa-bullet list-bullet space-y-2 text-gray-800 list-inside">
+            <li><a href="#" class="hover:text-red-800">Item 1</a></li>
+            <li><a href="#" class="hover:text-red-800">Item 2</a></li>
+          </ul>
+        </div>
+      
+        <!-- Main Content (Expands to fill space) -->
+        <div class="main-content order-1 lg:order-2 flex-1 p-2 sm:p-2 lg-p-5 px-1 sm:px-2 md:px-5">
+          <h2 class="text-2xl font-bold mb-4">Main Content Section</h2>
+          <p class="text-gray-700 leading-relaxed">
+            This section is centered, and the side menus appear beside it on large screens and below on smaller screens.
+          </p>
+        </div>
+      
+        <!-- Right Sidebar (Optional) -->
+        <div class="right border-2 border-gray-300 p-5 rounded-lg order-3 lg:order-3 lg:w-1/5 flex-shrink-0 lg:block">
+          <h3 class="text-2xl font-bold text-[#A20000] mb-4">Right Sidebar</h3>
+          <ul class="fa-bullet list-bullet space-y-2 text-gray-800 list-inside">
+            <li><a href="#" class="hover:text-red-800">Option A</a></li>
+            <li><a href="#" class="hover:text-red-800">Option B</a></li>
+          </ul>
+        </div>
+    </section>
+
+
+
+| LEFT |   MAIN CONTENT   | RIGHT |
+
+|     MAIN CONTENT     |
+|  LEFT      |   RIGHT |
+
+|  MAIN CONTENT  |
+|      LEFT      |
+|      RIGHT     |

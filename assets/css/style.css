@@ -141,6 +141,15 @@ details[open] summary div i {
   animation: scroll 30s linear infinite;
 }
 
+
+
+
+
+
+
+
+
+
 @media (max-width: 1200px) {
   #menu-toggle {
     display: block;  /* Show hamburger */
