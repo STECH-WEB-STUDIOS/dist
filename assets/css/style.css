@@ -141,7 +141,21 @@ details[open] summary div i {
   animation: scroll 30s linear infinite;
 }
 
+.fancybox__container {
+  --fancybox-bg: #000; /* Force background */
+  --fancybox-color: #fff; /* Text and icon color */
+}
 
+.fancybox__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fancybox__content {
+  max-width: 90vw;
+  max-height: 90vh;
+}
 
 
 
