@@ -33,3 +33,19 @@
 |  MAIN CONTENT  |
 |      LEFT      |
 |      RIGHT     |
+
+
+
+<div id="event9" class="event-content hidden">
+                    <h3 class="text-2xl font-bold mb-2">Entrepreneurship Bootcamp</h3>
+                    <p class="text-gray-700 mb-5 text-justify">
+                        Interactive sessions on startups, innovation, and pitching ideas.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, asperiores. Cupiditate, ducimus! Veritatis accusamus aliquid magni. Pariatur consequatur corporis delectus, aliquam, hic sunt, facilis tempore necessitatibus vitae rem nesciunt omnis?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, asperiores. Cupiditate, ducimus! Veritatis accusamus aliquid magni. Pariatur consequatur corporis delectus, aliquam, hic sunt, facilis tempore necessitatibus vitae rem nesciunt omnis?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, asperiores. Cupiditate, ducimus! Veritatis accusamus aliquid magni. Pariatur consequatur corporis delectus, aliquam, hic sunt, facilis tempore necessitatibus vitae rem nesciunt omnis?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, asperiores. Cupiditate, ducimus! Veritatis accusamus aliquid magni. Pariatur consequatur corporis delectus, aliquam, hic sunt, facilis tempore necessitatibus vitae rem nesciunt omnis?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, asperiores. Cupiditate, ducimus! Veritatis accusamus aliquid magni. Pariatur consequatur corporis delectus, aliquam, hic sunt, facilis tempore necessitatibus vitae rem nesciunt omnis?
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, asperiores. Cupiditate, ducimus! Veritatis accusamus aliquid magni. Pariatur consequatur corporis delectus, aliquam, hic sunt, facilis tempore necessitatibus vitae rem nesciunt omnis?
+                    </p>
+                    <p class="text-sm text-gray-500">📅 June 13, 2025 | 🕙 10:00 AM | 📍 Innovation Hub</p>
+                </div>
