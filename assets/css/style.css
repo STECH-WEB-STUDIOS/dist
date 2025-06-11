@@ -22,8 +22,8 @@ a {
 .small-nav-items{
   position: absolute;
   right: 0 !important;
-  z-index: 2;
-  margin-top: 65px;
+  z-index: 50 !important;
+  margin-top: 50px !important;
   clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) !important;
   padding: 8px 30px !important;
   font-size: 14px;
@@ -157,8 +157,14 @@ details[open] summary div i {
   max-height: 90vh;
 }
 
-
-
+.home-carousal {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.home-carousal::-webkit-scrollbar {
+    display: none;
+}
 
 
 
@@ -171,8 +177,23 @@ details[open] summary div i {
   #menu {
     display: none;   /* Hide nav items */
   }
+  .small-dist-logo {
+    display: block;
+  }
+  .large-dist-logo {
+    display: none;
+  }
+  nav {
+    margin-top: 10px;
+  }
 }
 
+
+@media (max-width: 2000px) {
+  .dept-cards {
+    padding: 50px !important;
+  }
+}
 
 @media (max-width: 1700px) {
   .dept-cards {

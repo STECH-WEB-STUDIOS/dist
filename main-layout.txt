@@ -27,14 +27,6 @@
 
 
 
-| LEFT |   MAIN CONTENT   | RIGHT |
-
-
-|  MAIN CONTENT  |
-|      LEFT      |
-|      RIGHT     |
-
-
 
 <div id="event9" class="event-content hidden">
                     <h3 class="text-2xl font-bold mb-2">Entrepreneurship Bootcamp</h3>
@@ -49,3 +41,53 @@
                     </p>
                     <p class="text-sm text-gray-500">📅 June 13, 2025 | 🕙 10:00 AM | 📍 Innovation Hub</p>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Logo -->
+<div class="w-full logo-nav">
+  <a href="index.html">
+      <img src="assets/images/logohead.jpg" alt="Header Image" class="w-full max-w-[800px] h-auto object-cover mt-6">
+  </a>
+</div>
+
+<nav class="bg-white border-gray-200 shadow-lg z-50 sticky top-0">
+  <div class="container mx-auto flex items-center justify-between p-4">
+    <!-- Hamburger for Small Screens -->
+    <button id="menu-toggle" class="text-gray-800 lg:hidden" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </button>
+
+    <!-- Nav Items (center-aligned for larger screens) -->
+    <div id="menu" class="hidden lg:flex space-x-6 mx-auto">
+        
+    </div>
+
+
+
+  </div>
+
+  <!-- Dropdown for Small Screens -->
+  <div id="mobile-menu" class="hidden flex-col bg-gray-100 px-10 py-2 shadow-md max-h-[80vh] overflow-y-auto">
+      
+  </div>
+</nav>

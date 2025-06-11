@@ -41,7 +41,7 @@
     </div>
 
     <!-- Logo -->
-    <div class="w-full logo-nav">
+    <div class="w-full large-dist-logo">
         <a href="index.html">
             <img src="assets/images/logohead.jpg" alt="Header Image" class="w-full max-w-[800px] h-auto object-cover mt-6">
         </a>
@@ -86,7 +86,7 @@
                                     </a>
                                     <div class="absolute top-0 left-full hidden group-hover/admin:block bg-white shadow-xl rounded-r-lg w-64 z-20">
                                         <ul class="text-sm text-gray-800">
-                                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">Provincial Council</a></li>
+                                            <li><a href="admin.html" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">Provincial Council</a></li>
                                             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">Governing/Sponsoring Body</a></li>
                                             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">Administrative Body</a></li>
                                             <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 hover:border-b-2 hover:border-[#4D0000] transition duration-300">Advisory Council</a></li>
@@ -377,6 +377,11 @@
                     <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4D0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
                 </a>
             </div>
+
+            <a href="index.html" class="small-dist-logo hidden">
+                <img src="assets/images/logo.png" alt="Small Logo" class="h-8 w-auto">
+            </a>
+
         </div>
 
         <!-- Dropdown for Small Screens -->
@@ -402,7 +407,7 @@
                             <i class="fas fa-chevron-right ml-2 text-xs"></i>
                         </button>
                         <div id="admin-submenu" class="hidden px-4 py-1 border-1 border-gray-300 rounded-lg">
-                            <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Provincial Council</a>
+                            <a href="admin.html" class="block py-2 text-gray-700 text-sm text-left hover:underline">Provincial Council</a>
                             <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Governing/Sponsoring Body</a>
                             <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Administrative Body</a>
                             <a href="#" class="block py-2 text-gray-700 text-sm text-left hover:underline">Advisory Council</a>
@@ -639,59 +644,44 @@
 
 
     <section id="poster" class="bg-gray-200 relative mt-2 w-full overflow-hidden">
-        <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out" style="will-change: transform;" >
-            <!-- Slides -->
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <video class="w-full h-full object-cover" muted playsinline autoplay loop>
+        <!-- Carousel Container -->
+        <div id="carousel" class="home-carousal flex overflow-x-auto scroll-snap-x snap-mandatory scroll-smooth w-full relative">
+
+            <!-- Slide 0 -->
+            <div class="w-full flex-shrink-0 snap-start relative">
+                <video class="w-full" muted playsinline autoplay loop>
                     <source src="assets/posters/college_day.webm" type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="assets/posters/daksh24-1.jpg" alt="Slide 2" class="w-full h-full object-cover" />
+
+            <!-- Slide 1 -->
+            <div class="w-full flex-shrink-0 snap-start relative">
+                <img src="assets/posters/daksh24-1.jpg" class="w-full" />
             </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="assets/posters/dignito24.jpg" alt="Slide 3" class="w-full h-full object-cover" />
+
+            <!-- Slide 2 -->
+            <div class="w-full flex-shrink-0 snap-start relative">
+                <img src="assets/posters/dignito24.jpg" class="w-full" />
             </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="assets/posters/lafoire24.jpg" alt="Slide 4" class="w-full h-full object-cover" />
+
+            <!-- Slide 3 -->
+            <div class="w-full flex-shrink-0 snap-start relative">
+                <img src="assets/posters/lafoire24.jpg" class="w-full" />
             </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="https://placehold.co/2000x700?text=These%20images%20are%20in%20the%20ratio%202000x700" alt="Slide 5" class="w-full h-full object-cover" />
-            </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="https://placehold.co/2000x700?text=These%20images%20are%20in%20the%20ratio%202000x700" alt="Slide 6" class="w-full h-full object-cover" />
-            </div>
-      
-            <!-- Duplicate slides for infinite loop -->
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <video class="w-full h-full object-cover" muted playsinline autoplay loop>
-                    <source src="assets/posters/college_day.webm" type="video/webm" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="assets/posters/daksh24-1.jpg" alt="Slide 2" class="w-full h-full object-cover"/>
-            </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="assets/posters/dignito24.jpg" alt="Slide 3" class="w-full h-full object-cover" />
-            </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="assets/posters/lafoire24.jpg" alt="Slide 4" class="w-full h-full object-cover" />
-            </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="https://placehold.co/2000x700?text=These%20images%20are%20in%20the%20ratio%202000x700" alt="Slide 5" class="w-full h-full object-cover" />
-            </div>
-            <div class="carousel-item relative flex-shrink-0 w-full max-w-[2000px] aspect-[2000/700]">
-                <img src="https://placehold.co/2000x700?text=These%20images%20are%20in%20the%20ratio%202000x700" alt="Slide 6" class="w-full h-full object-cover" />
+
+            <!-- Slide 4 -->
+            <div class="w-full flex-shrink-0 snap-start relative">
+                <img src="https://placehold.co/2000x700?text=These%20images%20are%20in%20the%20ratio%202000x700" class="w-full" />
             </div>
         </div>
-      
-        <!-- Controls -->
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-            <button id="prevBtn" class="text-gray-100 w-10 h-10 flex items-center justify-center cursor-pointer select-none text-3xl" aria-label="Previous Slide">❮</button>
-            <button id="nextBtn" class="text-gray-100 w-10 h-10 flex items-center justify-center cursor-pointer select-none text-3xl" aria-label="Next Slide">❯</button>
+
+        <!-- Navigation Buttons -->
+        <div class="absolute z-10 top-1/2 left-0 right-0 flex justify-between px-4 -translate-y-1/2 pointer-events-none">
+            <button onclick="prevSlide()" class="text-2xl text-white pointer-events-auto">❮</button>
+            <button onclick="nextSlide()" class="text-2xl text-white pointer-events-auto">❯</button>
         </div>
+
     </section>
       
 
@@ -1040,14 +1030,14 @@
 
     
     <section id="dept-section" class="bg-gray-100 py-10">
-        <div>
-            <div class="relative bg-gradient-to-r from-[#4D0000] to-[#ff0000] text-center text-white font-semibold py-2 polygon-head w-[60%] text-lg px-10 pl-4 sm:w-[40%] sm:text-2xl">
-                <i class="fa-solid fa-door-open"></i> <span class="tracking-wide"> Departments</span>
-            </div>
+        <div class="pt-10">
+            <h3 class="text-4xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-red-800 to-red-500 drop-shadow-lg mx-auto text-center border-b-4 border-gray-300 w-fit">
+                DEPARTMENTS
+            </h3>
 
             <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 dept-cards">
                 <!-- Card 1 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
+                <div class="rounded-xl overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/cs.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Computer Science</p>
@@ -1067,7 +1057,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
+                <div class="rounded-lg overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/sw.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Social Work</p>
@@ -1087,7 +1077,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
+                <div class="rounded-lg overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/management.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Management</p>
@@ -1108,7 +1098,7 @@
 
                 <!-- Add 3 more cards similarly -->
                 <!-- Card 4 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
+                <div class="rounded-lg overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/commerce.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Commerce</p>
@@ -1128,7 +1118,7 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
+                <div class="rounded-lg overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/media.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Media and Communication</p>
@@ -1148,7 +1138,7 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
+                <div class="rounded-lg overflow-hidden flex flex-col bg-white shadow-md" data-aos="fade-up" data-aos-duration="2000">
                     <img class="w-full" src="assets/images/english.jpg" alt="Sunset in the mountains">
                     <div class="relative -mt-16 px-4 py-3 bg-white rounded-md mx-4 mb-4 shadow-lg">
                         <p class="font-semibold text-lg transition duration-500 inline-block mb-2">School of English</p>

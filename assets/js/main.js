@@ -1,66 +1,56 @@
-const track = document.getElementById('carousel-track');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const slides = track.children;
-  const slideCount = slides.length / 2; // original slides count (before duplication)
-  
-  let index = 0;
-  let isTransitioning = false;
+// Home carousel
+const homeCarousel = document.getElementById('carousel');
+const totalSlides = homeCarousel.children.length;
+let currentIndex = 0;
+let autoSlideTimeout;
 
-  // Slide width based on first slide (should be same for all)
-  const slideWidth = slides[0].getBoundingClientRect().width;
+function goToSlide(index) {
+    const slideWidth = homeCarousel.clientWidth;
+    homeCarousel.scrollTo({
+        left: index * slideWidth,
+        behavior: 'smooth'
+    });
+    currentIndex = index;
+    scheduleNextSlide();
+}
 
-  // Initialize track to show first slide (original first slide, not duplicate)
-  track.style.transform = `translateX(0px)`;
+function nextSlide() {
+    const nextIndex = (currentIndex + 1) % totalSlides;
+    goToSlide(nextIndex);
+}
 
-  nextBtn.addEventListener('click', () => {
-    if (isTransitioning) return;
-    isTransitioning = true;
+function prevSlide() {
+    const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    goToSlide(prevIndex);
+}
 
-    index++;
-    track.style.transition = 'transform 0.5s ease-in-out';
-    track.style.transform = `translateX(${-slideWidth * index}px)`;
+function scheduleNextSlide() {
+    clearTimeout(autoSlideTimeout);
 
-    track.addEventListener('transitionend', onTransitionEnd);
-  });
+    const currentSlide = homeCarousel.children[currentIndex];
+    const video = currentSlide.querySelector('video');
 
-  prevBtn.addEventListener('click', () => {
-    if (isTransitioning) return;
-    isTransitioning = true;
+    if (video) {
+        video.loop = false;
 
-    index--;
-    track.style.transition = 'transform 0.5s ease-in-out';
-    track.style.transform = `translateX(${-slideWidth * index}px)`;
+        // Always restart video when we land on the slide
+        video.currentTime = 0;
+        video.play();
 
-    track.addEventListener('transitionend', onTransitionEnd);
-  });
+        const onVideoEnd = () => {
+            video.removeEventListener('ended', onVideoEnd);
+            nextSlide();
+        };
 
-  function onTransitionEnd() {
-    track.removeEventListener('transitionend', onTransitionEnd);
-
-    // Looping logic
-    if (index >= slideCount) {
-      // Moved past last original slide (show duplicate), jump back to start
-      index = 0;
-      track.style.transition = 'none';
-      track.style.transform = `translateX(0px)`;
-    } else if (index < 0) {
-      // Moved before first original slide, jump to last original slide
-      index = slideCount - 1;
-      track.style.transition = 'none';
-      track.style.transform = `translateX(${-slideWidth * index}px)`;
+        video.addEventListener('ended', onVideoEnd);
+    } else {
+        // Images slide after 3 seconds
+        autoSlideTimeout = setTimeout(nextSlide, 3000);
     }
+}
 
-    isTransitioning = false;
-  }
-
-  // Optional: Resize observer to update slideWidth dynamically
-  window.addEventListener('resize', () => {
-    const newWidth = slides[0].getBoundingClientRect().width;
-    if (newWidth !== slideWidth) {
-      // Not updating slideWidth variable for simplicity, but you can add logic here to handle resize
-    }
-  });
+// Start the carousel
+scheduleNextSlide();
 
 
 
@@ -116,31 +106,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 //Placed students carousel
-const carousel = document.querySelector('.placed-students-carousel');
-if (carousel) {
-  const items = Array.from(carousel.children);
+const placedStudentsCarousel = document.querySelector('.placed-students-carousel');
+if (placedStudentsCarousel) {
+  const items = Array.from(placedStudentsCarousel.children);
   const total = items.length;
   // Clone first slide(s) and append to the end for infinite effect
   const clones = items.slice(0, 2).map(item => item.cloneNode(true));
-  clones.forEach(clone => carousel.appendChild(clone));
+  clones.forEach(clone => placedStudentsCarousel.appendChild(clone));
   let index = 0;
   const slideWidth = items[0].offsetWidth;
   // Set carousel scroll position to 0 initially
-  carousel.scrollLeft = 0;
+  placedStudentsCarousel.scrollLeft = 0;
   setInterval(() => {
     index++;
-    carousel.scrollTo({
+    placedStudentsCarousel.scrollTo({
       left: slideWidth * index,
       behavior: 'smooth',
     });
     // Reset to 0 when reaching cloned slides to loop infinitely
     if (index >= total) {
       setTimeout(() => {
-        carousel.style.scrollBehavior = 'auto'; // Remove smooth to jump instantly
-        carousel.scrollLeft = 0;
+        placedStudentsCarousel.style.scrollBehavior = 'auto'; // Remove smooth to jump instantly
+        placedStudentsCarousel.scrollLeft = 0;
         index = 0;
         setTimeout(() => {
-          carousel.style.scrollBehavior = 'smooth'; // Restore smooth
+          placedStudentsCarousel.style.scrollBehavior = 'smooth'; // Restore smooth
         }, 50);
       }, 500); // Wait for smooth scroll to finish before jump
     }
