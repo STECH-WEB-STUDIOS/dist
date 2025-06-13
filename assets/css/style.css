@@ -23,7 +23,7 @@ a {
   position: absolute;
   right: 0 !important;
   z-index: 50 !important;
-  margin-top: 50px !important;
+  margin-top: 55px !important;
   clip-path: polygon(4% 0, 100% 0, 100% 100%, 0 100%) !important;
   padding: 8px 30px !important;
   font-size: 14px;
@@ -206,7 +206,45 @@ details[open] summary div i {
     padding: 40px !important;
   }
 }
+
+
 @media (max-width: 576px) {
+  .small-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  /* Center align the first flex container (contact info) */
+  .small-nav > .flex:first-child {
+    justify-content: center;
+    width: 100%;
+    padding: 15px !important;
+  }
+
+  .small-nav span,
+  .small-nav a {
+    text-align: center;
+  }
+
+  .small-nav .small-nav-items {
+    position: relative !important;
+    right: auto !important;
+    margin-top: 10px !important;
+    clip-path: none !important;
+    padding: 10px !important;
+    background-color: #A20000 !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .small-nav .small-nav-items a,
+  .small-nav .small-nav-items span {
+    margin: 5px 10px;
+  }
+
   .dept-cards {
     padding: 20px !important;
   }
@@ -219,6 +257,7 @@ details[open] summary div i {
     margin-left: -25px !important;
   }
 }
+
 
 @media (max-width: 380px) {
     .small-nav{
