@@ -2,12 +2,12 @@
 
 ![College Logo](https://github.com/STECH-WEB-STUDIOS/dist/blob/main/assets/images/logohead.jpg) <!-- Replace with your actual banner image -->
 
-# Website for De Paul Institute of Science & Technology, Angamaly
+### Website for De Paul Institute of Science & Technology, Angamaly
 
-## 🔗 Live Demo
+### 🔗 Live Demo
 📌 **GitHub Pages:** [Click Here](https://stech-web-studios.github.io/dist/)  
 
-## 🛠️ Technologies Used
+### 🛠️ Technologies Used
 - HTML5
 - Tailwind CSS
 - JavaScript
