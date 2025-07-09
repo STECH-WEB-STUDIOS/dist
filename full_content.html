@@ -642,11 +642,11 @@
         </div>
     </nav>
 
-    <div class="text-center bg-gradient-to-r from-[#4D0000] via-[#A20000] to-[#4D0000] text-white py-10">
-        <h3 class="text-3xl font-bold oswald-heading">MAIN HEADING</h3>
+    <div class="page-main-heading">
+        <h3>MAIN HEADING</h3>
     </div>
 
-    <section class="main-content p-5 bg-gray-100 flex flex-col lg:flex-row gap-5">
+    <section class="content-section">
 
         <!-- Left Sidebar (Optional) Uncomment it when needed! -->
         <!-- <div class="left border-2 border-gray-300 p-5 rounded-lg order-2 lg:order-1 lg:w-1/5 flex-shrink-0 lg:block" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
@@ -678,9 +678,9 @@
         </div> -->
       
         <!-- Main Content (Expands to fill space) -->
-        <div class="main-content order-1 lg:order-2 flex-1 p-2 sm:p-2 lg-p-5 px-1 sm:px-2 md:px-5">
+        <div class="content-main-content">
 
-            <div class="max-w-7xl mx-auto px-6 mb-20">
+            <div class="content-sub-content">
                 
                 <div class="w-full" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
                     <!-- Image with visible ratio label -->
@@ -688,15 +688,15 @@
                 </div>
                 
                 <!-- Section 1: Left-Aligned Image -->
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 mt-10 border-b-2 border-gray-300">Left Aligned Image</h2>
+                <h2 class="sub-content-heading">Left Aligned Image</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-1 gap-6 items-start" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="50">
-                    <p class="text-gray-700 text-justify text-base leading-relaxed">
+                <div class="sub-content-text" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="50">
+                    <p class="sub-content-text-para">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quisquam! Aliquam saepe, optio illo quisquam provident, quasi quos atque placeat at odit, nobis quia? Aperiam incidunt nulla blanditiis quos obcaecati!
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quisquam! Aliquam saepe, optio illo quisquam provident, quasi quos atque placeat at odit, nobis quia? Aperiam incidunt nulla blanditiis quos obcaecati!
                         
                         <!-- Left Aligned Image -->
-                        <img src="https://placehold.co/300x250?text=6:5" alt="Library Placeholder" class="md:float-left w-full md:w-[300px] h-auto md:mr-4 mb-4 rounded shadow-md border-[10px] border-white" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0"/>
+                        <img src="https://placehold.co/300x250?text=6:5" alt="Library Placeholder" class="sub-content-img-lt" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0"/>
 
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quisquam! Aliquam saepe, optio illo quisquam provident, quasi quos atque placeat at odit, nobis quia? Aperiam incidunt nulla blanditiis quos obcaecati!
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ullam reiciendis doloribus quis dolor eligendi voluptatibus, vitae maxime hic dolorem aliquid impedit officia accusantium, illo nam est nulla consequatur tenetur!
@@ -709,15 +709,15 @@
                     </p>
                 </div>
 
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 mt-10 border-b-2 border-gray-300">Right Aligned Image</h2>
+                <h2 class="sub-content-heading">Right Aligned Image</h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-1 gap-6 items-start" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
-                    <p class="text-gray-700 text-justify text-base leading-relaxed">
+                <div class="sub-content-text" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+                    <p class="sub-content-text-para">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quisquam! Aliquam saepe, optio illo quisquam provident, quasi quos atque placeat at odit, nobis quia? Aperiam incidunt nulla blanditiis quos obcaecati!
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quisquam! Aliquam saepe, optio illo quisquam provident, quasi quos atque placeat at odit, nobis quia? Aperiam incidunt nulla blanditiis quos obcaecati!
 
                         <!-- Right Aligned Image -->
-                        <img src="https://placehold.co/300x250?text=6:5" alt="Facilities Placeholder" class="md:float-right w-full md:w-[300px] h-auto md:ml-4 mb-4 rounded shadow-md border-[10px] border-white" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0"/>
+                        <img src="https://placehold.co/300x250?text=6:5" alt="Facilities Placeholder" class="sub-content-img-rt" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0"/>
 
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, quisquam! Aliquam saepe, optio illo quisquam provident, quasi quos atque placeat at odit, nobis quia? Aperiam incidunt nulla blanditiis quos obcaecati!
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ullam reiciendis doloribus quis dolor eligendi voluptatibus, vitae maxime hic dolorem aliquid impedit officia accusantium, illo nam est nulla consequatur tenetur!
@@ -731,79 +731,79 @@
                 </div>
             </div>
             
-            <div class="max-w-7xl mx-auto px-6 mb-20">
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 mt-10 border-b-2 border-gray-300">Images with Caption</h2>
+            <div class="content-sub-content">
+                <h2 class="sub-content-heading">Images with Caption</h2>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+                <div class="sub-content-img-grid" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
                     <!-- Image 1 -->
                     <div class="text-center">
-                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 1" class="w-full h-auto rounded shadow-md border-[10px] border-white" />
-                        <p class="mt-2 text-gray-700 text-sm font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 1" class="sub-content-image" />
+                        <p class="sub-content-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
                     </div>
                     
                     <!-- Image 2 -->
                     <div class="text-center">
-                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 2" class="w-full h-auto rounded shadow-md border-[10px] border-white"/>
+                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 2" class="sub-content-image"/>
                         
-                        <p class="mt-2 text-gray-700 text-sm font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit IoT Setup</p>
+                        <p class="sub-content-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit IoT Setup</p>
                     </div>
 
                     <!-- Image 3 -->
                     <div class="text-center">
-                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 3" class="w-full h-auto rounded shadow-md border-[10px] border-white"/>
-                        <p class="mt-2 text-gray-700 text-sm font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lab</p>
+                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 3" class="sub-content-image"/>
+                        <p class="sub-content-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit Lab</p>
                     </div>
 
                     <!-- Image 4 -->
                     <div class="text-center">
-                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 4" class="w-full h-auto rounded shadow-md border-[10px] border-white"/>
+                        <img src="https://placehold.co/300x250?text=6:5" alt="Lab 4" class="sub-content-image"/>
                             
-                        <p class="mt-2 text-gray-700 text-sm font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit Learning</p>
+                        <p class="sub-content-img-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit Learning</p>
                     </div>
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 mb-20">
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Ordered List with Collapse</h2>
+            <div class="content-sub-content">
+                <h2 class="sub-content-heading">Ordered List with Collapse</h2>
             
-                <ol class="styled-list list-decimal ml-6 space-y-4 text-gray-800" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+                <ol class="styled-list sub-content-ol" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
                     <li class="mb-6">
-                        <details class="collapse border-t border-gray-300 shadow-lg pb-4 pr-4">
-                            <summary class="collapse-title font-semibold text-red-900">
-                                <div class="flex w-full items-center justify-between">
+                        <details class="sub-content-ol-details">
+                            <summary class="sub-content-ol-details-summary">
+                                <div class="sub-content-ol-details-summary-text">
                                     Whether any capitation or donation is required?
                                     <i class="fas fa-angle-down text-lg"></i>
                                 </div>
                             </summary>
-                            <div class="collapse-content text-md text-gray-900 ml-3 border border-gray-300 rounded-md p-3">
+                            <div class="sub-content-ol-details-text">
                                 No donation or capitation is required. The selection of students is purely based on 'First Come First Served' policy. No external agencies are entrusted with any kind of admission procedures.
                             </div>
                         </details>
                     </li>
                 
                     <li class="mb-6">
-                        <details class="collapse border-t border-gray-300 shadow-lg pb-4 pr-4">
-                            <summary class="collapse-title font-semibold text-red-900">
-                                <div class="flex w-full items-center justify-between">
+                        <details class="sub-content-ol-details">
+                            <summary class="sub-content-ol-details-summary">
+                                <div class="sub-content-ol-details-summary-text">
                                     What documents are needed for admission?
                                     <i class="fas fa-angle-down text-lg"></i>
                                 </div>
                             </summary>
-                            <div class="collapse-content text-md text-gray-900 ml-3 border border-gray-300 rounded-md p-3">
+                            <div class="sub-content-ol-details-text">
                                 You will need your SSLC mark sheet, transfer certificate, community certificate (if applicable), and passport-sized photographs.
                             </div>
                         </details>
                     </li>
                 
                     <li class="mb-6">
-                        <details class="collapse border-t border-gray-300 shadow-lg pb-4 pr-4">
-                            <summary class="collapse-title font-semibold text-red-900">
-                                <div class="flex w-full items-center justify-between">
+                        <details class="sub-content-ol-details">
+                            <summary class="sub-content-ol-details-summary">
+                                <div class="sub-content-ol-details-summary-text">
                                     Is there any entrance exam?
                                     <i class="fas fa-angle-down text-lg"></i>
                                 </div>
                             </summary>
-                            <div class="collapse-content text-md text-gray-900 ml-3 border border-gray-300 rounded-md p-3">
+                            <div class="sub-content-ol-details-text">
                                 No entrance exam is required. Admission is based on merit and the order of application.
                             </div>
                         </details>
@@ -811,123 +811,123 @@
                 </ol>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 mb-20">
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Ordered List</h2>
+            <div class="content-sub-content">
+                <h2 class="sub-content-heading">Ordered List</h2>
                 
-                <ol class="styled-list list-decimal ml-6 space-y-4 text-gray-800" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+                <ol class="styled-list sub-content-ol" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
                     <li>
-                        <span class="text-lg font-semibold text-red-900">Books</span>
-                        <ul class="list-disc ml-5 mt-2 text-gray-900">
+                        <span class="sub-content-ol-span">Books</span>
+                        <ul class="sub-content-ol-span-ul">
                             <li>Printed</li>
                             <li>E-Books</li>
                         </ul>
                     </li>
                     <li>
-                        <span class="text-lg font-semibold text-red-900">Periodicals</span>
-                        <ul class="list-disc ml-5 mt-2 text-gray-900">
+                        <span class="sub-content-ol-span">Periodicals</span>
+                        <ul class="sub-content-ol-span-ul">
                             <li>Journals (International & National)</li>
                             <li>Magazines</li>
                             <li>Newsletters</li>
                         </ul>
                     </li>
                     <li>
-                        <span class="text-lg font-semibold text-red-900">Databases</span>
-                        <ul class="list-disc ml-5 mt-2 text-gray-900">
+                        <span class="sub-content-ol-span">Databases</span>
+                        <ul class="sub-content-ol-span-ul">
                             <li>Subscribed</li>
                             <li>Open access</li>
                         </ul>
                     </li>
-                    <li><span class="text-lg font-semibold text-red-900">Newspapers</span></li>
-                    <li><span class="text-lg font-semibold text-red-900">Project Reports</span></li>
-                    <li><span class="text-lg font-semibold text-red-900">Theses / Dissertations</span></li>
-                    <li><span class="text-lg font-semibold text-red-900">Back Volumes of Periodicals</span></li>
-                    <li><span class="text-lg font-semibold text-red-900">Previous University Question Papers</span></li>
-                    <li><span class="text-lg font-semibold text-red-900">Drilbit</span></li>
+                    <li><span class="sub-content-ol-span">Newspapers</span></li>
+                    <li><span class="sub-content-ol-span">Project Reports</span></li>
+                    <li><span class="sub-content-ol-span">Theses / Dissertations</span></li>
+                    <li><span class="sub-content-ol-span">Back Volumes of Periodicals</span></li>
+                    <li><span class="sub-content-ol-span">Previous University Question Papers</span></li>
+                    <li><span class="sub-content-ol-span">Drilbit</span></li>
                 </ol>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 mb-20">
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Table Heading</h2>
-                <div class="flex flex-col justify-center h-full">
+            <div class="content-sub-content">
+                <h2 class="sub-content-heading">Table Heading</h2>
+                <div class="sub-content-table-content">
 
                     <!-- Table -->
-                    <div class="w-full max-w-5xl mx-auto bg-gray-100 shadow-lg rounded-xl" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+                    <div class="table-content" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
                         <div>
                             <div class="overflow-x-auto">
                                 <table class="table-auto w-full">
-                                    <thead class="uppercase text-gray-400 bg-gray-100 border-b-2 border-red-800">
+                                    <thead class="thead">
                                         <tr class="rounded-xl">
-                                            <th class="p-2 whitespace-nowrap rounded-xl">
-                                                <div class="font-bold text-center text-red-900 text-sm">Borrowers</div>
+                                            <th class="table-th">
+                                                <div class="table-th-text">Borrowers</div>
                                             </th>
-                                            <th class="p-2 whitespace-nowrap rounded-xl">
-                                                <div class="font-bold text-center text-red-900 text-sm">No. of Books</div>
+                                            <th class="table-th">
+                                                <div class="table-th-text">No. of Books</div>
                                             </th>
-                                            <th class="p-2 whitespace-nowrap rounded-xl">
-                                                <div class="font-bold text-center text-red-900 text-sm">Loan Period</div>
+                                            <th class="table-th">
+                                                <div class="table-th-text">Loan Period</div>
                                             </th>
-                                            <th class="p-2 whitespace-nowrap rounded-xl">
-                                                <div class="font-bold text-center text-red-900 text-sm">Overdue Fine</div>
+                                            <th class="table-th">
+                                                <div class="table-th-text">Overdue Fine</div>
                                             </th>
                                         </tr>
                                     </thead>
-                                    <tbody class="divide-y divide-gray-100">
-                                        <tr class="hover:bg-gray-200">
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
-                                                <div class="text-gray-800 font-medium text-center"><b>Faculty</b></div>
+                                    <tbody class="table-tbody">
+                                        <tr class="table-tbody-tr">
+                                            <td class="table-tbody-tr-td">
+                                                <div class="table-tbody-tr-td-text"><b>Faculty</b></div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">10</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">1 Month</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">₹ 1 Per Day</div>
                                             </td>
                                         </tr>
                             
-                                        <tr class="hover:bg-gray-200">
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
-                                                <div class="text-gray-800 font-medium text-center"><b>Staff</b></div>
+                                        <tr class="table-tbody-tr">
+                                            <td class="table-tbody-tr-td">
+                                                <div class="table-tbody-tr-td-text"><b>Staff</b></div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">2</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">1 Month</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">₹ 1 Per Day</div>
                                             </td>
                                         </tr>
                             
-                                        <tr class="hover:bg-gray-200">
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
-                                                <div class="text-gray-800 font-medium text-center"><b>PG Students</b></div>
+                                        <tr class="table-tbody-tr">
+                                            <td class="table-tbody-tr-td">
+                                                <div class="table-tbody-tr-td-text"><b>PG Students</b></div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">3</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">14 Days</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap border-b-2 border-gray-100">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">₹ 1 Per Day</div>
                                             </td>
                                         </tr>
                             
-                                        <tr class="rounded-xl hover:bg-gray-200 hover:rounded-xl">
-                                            <td class="p-2 whitespace-nowrap rounded-bl-xl">
-                                                <div class="text-gray-800 font-medium text-center"><b>UG Students</b></div>
+                                        <tr class="table-tbody-tr">
+                                            <td class="table-tbody-tr-td">
+                                                <div class="table-tbody-tr-td-text"><b>UG Students</b></div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">2</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">7 Days</div>
                                             </td>
-                                            <td class="p-2 whitespace-nowrap rounded-br-xl">
+                                            <td class="table-tbody-tr-td">
                                                 <div class="text-center text-sm">₹ 1 Per Day</div>
                                             </td>
                                         </tr>
@@ -939,28 +939,28 @@
                 </div>
             </div>
 
-            <div class="max-w-7xl mx-auto px-6 mb-20">
-                <h2 class="text-3xl w-full py-2 font-bold text-gray-800 mb-8 border-b-2 border-gray-300">Unordered List</h2>
+            <div class="content-sub-content">
+                <h2 class="sub-content-heading">Unordered List</h2>
           
                 <div class="space-y-2">
-                    <ul class="fa-bullet book-bullet list-inside" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
+                    <ul class="sub-content-ul" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
                         <li class="mb-6">
-                        <h3 class="text-xl font-bold text-red-900 mb-1">Book Lending Service / Circulation</h3>
+                        <h3 class="sub-content-ul-text">Book Lending Service / Circulation</h3>
                         <p>Library provides open access for all books to its Students, Faculty, and Staff.</p>
                         </li>
                     
                         <li class="mb-6">
-                        <h3 class="text-xl font-bold text-red-900 mb-1">Book Reservation</h3>
+                        <h3 class="sub-content-ul-text">Book Reservation</h3>
                         <p>Books can be reserved at the circulation desk or through the intranet if they are not available on the shelf.</p>
                         </li>
                     
                         <li class="mb-6">
-                        <h3 class="text-xl font-bold text-red-900 mb-1">Reference Service</h3>
+                        <h3 class="sub-content-ul-text">Reference Service</h3>
                         <p>In-person assistance is provided by the library to help users fulfil their information needs.</p>
                         </li>
                     
                         <li class="mb-6">
-                        <h3 class="text-xl font-bold text-red-900 mb-1">User Guidance Service</h3>
+                        <h3 class="sub-content-ul-text">User Guidance Service</h3>
                         <p>A Library Orientation Programme is conducted to introduce new members to the library's resources.</p>
                         </li>
                     

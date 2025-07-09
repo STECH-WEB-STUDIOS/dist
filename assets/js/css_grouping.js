@@ -431,9 +431,223 @@ function applyGroupedClasses() {
   
   ////////////////////////////////////////////////////////////////////////////////////
   
-  /* FULL CONTENT PAGE /*
+  /* FULL CONTENT PAGE */
   
+  // Page Main Heading 
+  document.querySelectorAll('.page-main-heading').forEach(el => {
+    el.classList.add(
+      'text-center', 'bg-gradient-to-r', 'from-[#4D0000]', 'via-[#A20000]', 'to-[#4D0000]',
+      'text-white', 'py-10', 'text-3xl', 'font-bold', 'oswald-heading'
+    );
+  });
+
+  // Content Section
+  document.querySelectorAll('.content-section').forEach(el => {
+    el.classList.add(
+      'p-5', 'bg-gray-100', 'flex', 'flex-col', 'lg:flex-row', 'gap-5'
+    );
+  });
+
+  // Content Main Content
+  document.querySelectorAll('.content-main-content').forEach(el => {
+    el.classList.add(
+      'order-1', 'lg:order-2', 'flex-1', 'p-2', 'sm:p-2', 'lg-p-5',
+      'px-1', 'sm:px-2', 'md:px-5'
+    );
+  });
+
+  // Content Sub Content
+  document.querySelectorAll('.content-sub-content').forEach(el => {
+    el.classList.add(
+      'max-w-7xl', 'mx-auto', 'px-6', 'mb-20'
+    );
+  });
+
+  // Sub Content Heading
+  document.querySelectorAll('.sub-content-heading').forEach(el => {
+    el.classList.add(
+      'text-3xl', 'w-full', 'py-2', 'font-bold', 'text-gray-800',
+      'mb-8', 'mt-10', 'border-b-2', 'border-gray-300'
+    );
+  });
+
+  // Sub Content Text
+  document.querySelectorAll('.sub-content-text').forEach(el => {
+    el.classList.add(
+      'grid', 'grid-cols-1', 'md:grid-cols-1', 'gap-6', 'items-start'
+    );
+  });
+
+  // Sub Content Text Para
+  document.querySelectorAll('.sub-content-text-para').forEach(el => {
+    el.classList.add(
+      'text-gray-700', 'text-justify', 'text-base', 'leading-relaxed'
+    );
+  });
+
+  // Sub Content Image Left
+  document.querySelectorAll('.sub-content-img-lt').forEach(el => {
+    el.classList.add(
+      'md:float-left', 'w-full', 'md:w-[300px]', 'h-auto', 'md:mr-4',
+      'mb-4', 'rounded', 'shadow-md', 'border-[10px]', 'border-white'
+    );
+  });
+
+  // Sub Content Image Right
+  document.querySelectorAll('.sub-content-img-rt').forEach(el => {
+    el.classList.add(
+      'md:float-right', 'w-full', 'md:w-[300px]', 'h-auto', 'md:ml-4',
+      'mb-4', 'rounded', 'shadow-md', 'border-[10px]', 'border-white'
+    );
+  });
+
+  // Sub Content Image Grid
+  document.querySelectorAll('.sub-content-img-grid').forEach(el => {
+    el.classList.add(
+      'grid', 'grid-cols-1', 'sm:grid-cols-2', 'lg:grid-cols-4', 'gap-6'
+    );
+  });
+
+  // Sub Content Image
+  document.querySelectorAll('.sub-content-image').forEach(el => {
+    el.classList.add(
+      'w-full', 'h-auto', 'rounded', 'shadow-md', 'border-[10px]', 'border-white'
+    );
+  });
+
+  // Sub Content Image Text
+  document.querySelectorAll('.sub-content-img-text').forEach(el => {
+    el.classList.add(
+      'mt-2', 'text-gray-700', 'text-sm', 'font-bold'
+    );
+  });
+
+  // Sub Content Ol
+  document.querySelectorAll('.sub-content-ol').forEach(el => {
+    el.classList.add(
+      'list-decimal', 'ml-6', 'space-y-4', 'text-gray-800'
+    );
+  });
+
+  // Sub Content Ol Details
+  document.querySelectorAll('.sub-content-ol-details').forEach(el => {
+    el.classList.add(
+      'collapse', 'border-t', 'border-gray-300', 'shadow-lg', 'pb-4', 'pr-4'
+    );
+  });
+
+  // Sub Content Ol Details Summary
+  document.querySelectorAll('.sub-content-ol-details-summary').forEach(el => {
+    el.classList.add(
+      'collapse-title', 'font-semibold', 'text-red-900'
+    );
+  });
+
+  // Sub Content Ol Details Summary Text
+  document.querySelectorAll('.sub-content-ol-details-summary-text').forEach(el => {
+    el.classList.add(
+      'flex', 'w-full', 'items-center', 'justify-between'
+    );
+  });
+
+  // Sub Content Ol Details Text
+  document.querySelectorAll('.sub-content-ol-details-text').forEach(el => {
+    el.classList.add(
+      'collapse-content', 'text-md', 'text-gray-900', 'ml-3',
+      'border', 'border-gray-300', 'rounded-md', 'p-3'
+    );
+  });
+
+  // Sub Content Ol Span
+  document.querySelectorAll('.sub-content-ol-span').forEach(el => {
+    el.classList.add(
+      'text-lg', 'font-semibold', 'text-red-900'
+    );
+  });
+
+  // Sub Content Ol Span Ul
+  document.querySelectorAll('.sub-content-ol-span-ul').forEach(el => {
+    el.classList.add(
+      'list-disc', 'ml-5', 'mt-2', 'text-gray-900'
+    );
+  });
+
+  // Sub Content Table Content
+  document.querySelectorAll('.sub-content-table-content').forEach(el => {
+    el.classList.add(
+      'flex', 'flex-col', 'justify-center', 'h-full'
+    );
+  });
+
+  // Table Content
+  document.querySelectorAll('.table-content').forEach(el => {
+    el.classList.add(
+      'w-full', 'max-w-5xl', 'mx-auto', 'bg-gray-100', 'shadow-lg', 'rounded-xl'
+    );
+  });
   
+  // Thead
+  document.querySelectorAll('thead').forEach(el => {
+    el.classList.add(
+      'uppercase', 'text-gray-400', 'bg-gray-100', 'border-b-2', 'border-red-800'
+    );
+  });
+
+  // Table Th
+  document.querySelectorAll('.table-th').forEach(el => {
+    el.classList.add(
+      'p-2', 'whitespace-nowrap', 'rounded-xl'
+    );
+  });
+
+  // Table Th Text
+  document.querySelectorAll('.table-th-text').forEach(el => {
+    el.classList.add(
+      'font-bold', 'text-center', 'text-red-900', 'text-sm'
+    );
+  });
+
+  // Table Tbody
+  document.querySelectorAll('.table-tbody').forEach(el => {
+    el.classList.add(
+      'divide-y', 'divide-gray-100'
+    );
+  });
+
+  // Table Tbody Tr
+  document.querySelectorAll('.table-tbody-tr').forEach(el => {
+    el.classList.add(
+      'hover:bg-gray-200'
+    );
+  });
+
+  // Table Tbody Tr Td
+  document.querySelectorAll('.table-tbody-tr-td').forEach(el => {
+    el.classList.add(
+      'p-2', 'whitespace-nowrap', 'border-b-2', 'border-gray-100'
+    );
+  });
+
+  // Table Tbody Tr Td Text
+  document.querySelectorAll('.table-tbody-tr-td-text').forEach(el => {
+    el.classList.add(
+      'text-gray-800', 'font-medium', 'text-center'
+    );
+  });
+
+  // Sub Content Ul
+  document.querySelectorAll('.sub-content-ul').forEach(el => {
+    el.classList.add(
+      'fa-bullet', 'book-bullet', 'list-inside'
+    );
+  });
+
+  // Sub Content Ul Text
+  document.querySelectorAll('.sub-content-ul-text').forEach(el => {
+    el.classList.add(
+      'text-xl', 'font-bold', 'text-red-900', 'mb-1'
+    );
+  });
   
   /* FULL CONTENT PAGE */
   
