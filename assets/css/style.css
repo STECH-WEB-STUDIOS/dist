@@ -19,6 +19,10 @@ a {
   cursor: pointer !important;
 }
 
+.invisible-until-ready { 
+  opacity: 0; 
+}
+
 .small-nav-items{
   position: absolute;
   right: 0 !important;
@@ -98,7 +102,7 @@ section {
 }
 
 .list-bullet li::before {
-  content: "\f02e"; /* Font Awesome icon (fa-angle-right) */
+  content: "\f02e";
   font-family: "Font Awesome 6 Free";
   font-weight: 900; /* Required for solid icons */
   position: absolute;
@@ -107,7 +111,7 @@ section {
 }
 
 .book-bullet li::before {
-  content: "\f02d"; /* Font Awesome icon (fa-angle-right) */
+  content: "\f02d";
   font-family: "Font Awesome 6 Free";
   font-weight: 900; /* Required for solid icons */
   position: absolute;
@@ -116,7 +120,7 @@ section {
 }
 
 .disc-bullet li::before {
-  content: "\f111"; /* Font Awesome icon (fa-angle-right) */
+  content: "\f111";
   font-family: "Font Awesome 6 Free";
   position: absolute;
   font-size: 8px !important;

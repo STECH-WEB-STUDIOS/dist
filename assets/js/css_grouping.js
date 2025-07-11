@@ -1,6 +1,194 @@
-// css_grouping.js
-
 function applyGroupedClasses() {
+
+  /* NAV BAR */
+  
+  // Small Navigation Bar
+  document.querySelectorAll('.small-nav').forEach(el => {
+    el.classList.add(
+      'w-full', 'bg-gradient-to-r', 'from-[#4D0000]',
+      'via-[#A20000]', 'to-[#4D0000]', 'text-white',
+      'text-sm', 'px-3', 'py-5', 'flex', 'items-center'
+    );
+  });
+
+  // Small Nav Main Container
+  document.querySelectorAll('.small-nav-main').forEach(el => {
+    el.classList.add(
+      'flex', 'items-center', 'space-x-2'
+    );
+  });
+
+  // Small Nav Sub Container
+  document.querySelectorAll('.small-nav-sub').forEach(el => {
+    el.classList.add(
+      'bg-[#A20000]', 'py-2', 'px-4',
+      'flex', 'space-x-4', 'small-nav-items'
+    );
+  });
+
+  // White Link
+  document.querySelectorAll('.white-link').forEach(el => {
+    el.classList.add(
+      'text-white', 'hover:underline'
+    );
+  });
+
+  // Navigation Logo
+  document.querySelectorAll('.nav-main-logo').forEach(el => {
+    el.classList.add(
+      'w-full', 'max-w-[800px]', 'h-auto',
+      'object-cover', 'mt-6'
+    );
+  });
+
+  // Main Navigation Content
+  document.querySelectorAll('.nav-main-content').forEach(el => {
+    el.classList.add(
+      'bg-white', 'border-gray-200', 'shadow-lg',
+      'z-50', 'sticky', 'top-0'
+    );
+  });
+
+  // Navigation Container
+  document.querySelectorAll('.nav-container').forEach(el => {
+    el.classList.add(
+      'container', 'mx-auto', 'flex',
+      'items-center', 'justify-between', 'p-4'
+    );
+  });
+
+  // Navigation Main Menu
+  document.querySelectorAll('.nav-main-menu').forEach(el => {
+    el.classList.add(
+      'hidden', 'lg:flex', 'space-x-6', 'mx-auto'
+    );
+  });
+
+  // Navigation Main Link
+  document.querySelectorAll('.nav-main-link-group').forEach(el => {
+    el.classList.add(
+      'relative', 'group'
+    );
+  });
+
+  // Navigation Main Link
+  document.querySelectorAll('.nav-main-link').forEach(el => {
+    el.classList.add(
+      'relative', 'text-gray-800', 'font-medium',
+      'whitespace-nowrap', 'group'
+    );
+  });
+
+  // Navigation Main Link Underline
+  document.querySelectorAll('.nav-main-link-underline').forEach(el => {
+    el.classList.add(
+      'absolute', 'left-0', '-bottom-1', 'w-full', 'h-[2px]',
+      'bg-[#4D0000]', 'z-20', 'scale-x-0', 'group-hover:scale-x-100',
+      'transform', 'transition-transform', 'duration-300'
+    );
+  });
+
+  // Navigation Sublinks Dropdown
+  document.querySelectorAll('.nav-sublinks').forEach(el => {
+    el.classList.add(
+      'absolute', 'left-0', 'top-full', 'hidden',
+      'group-hover:block', 'bg-white', 'shadow-xl',
+      'w-64', 'z-10'
+    );
+  });
+
+  // Navigation Submenu)
+  document.querySelectorAll('.nav-submenu').forEach(el => {
+    el.classList.add(
+      'absolute', 'top-0', 'left-full', 'hidden',
+      'group-hover/admin:block', 'bg-white',
+      'shadow-xl', 'w-64', 'z-20'
+    );
+  });
+
+  // Navigation Submenu Ul
+  document.querySelectorAll('.nav-sub-ul').forEach(el => {
+    el.classList.add(
+      'text-sm', 'text-gray-800'
+    );
+  });
+
+  // Navigation Item Links
+  document.querySelectorAll('.nav-item-links').forEach(el => {
+    el.classList.add(
+      'block', 'px-4', 'py-2', 'border-b-2', 'border-white',
+      'hover:bg-gray-100', 'hover:border-b-2', 'hover:border-[#4D0000]',
+      'transition', 'duration-300'
+    );
+  });
+
+  // Navigation Link Right
+  document.querySelectorAll('.nav-link-right').forEach(el => {
+    el.classList.add(
+      'flex', 'justify-between', 'items-center'
+    );
+  });
+
+  // Mobile Navigation
+  document.querySelectorAll('.mobile-nav').forEach(el => {
+    el.classList.add(
+      'hidden', 'flex-col', 'bg-gray-100', 'px-10', 'py-2',
+      'shadow-md', 'max-h-[80vh]', 'overflow-y-auto'
+    );
+  });
+
+  // Mobile Navigation Title
+  document.querySelectorAll('.mobile-nav-title').forEach(el => {
+    el.classList.add(
+      'block', 'text-gray-800', 'py-2',
+      'font-semibold', 'text-left'
+    );
+  });
+
+  // Mobile Navigation Main Link Dropdown
+  document.querySelectorAll('.mobile-nav-main-link-dropdown').forEach(el => {
+    el.classList.add(
+      'w-full', 'py-2', 'text-gray-900',
+      'font-medium', 'flex', 'items-center', 'text-left'
+    );
+  });
+  
+  // Mobile Navigation Main Link
+  document.querySelectorAll('.mobile-nav-main-link').forEach(el => {
+    el.classList.add(
+      'w-full', 'py-2', 'text-gray-900',
+      'font-medium', 'flex', 'items-center',
+      'text-left', 'block', 'hover:underline'
+    );
+  });
+
+  // Mobile Navigation Submenu
+  document.querySelectorAll('.mobile-nav-submenu').forEach(el => {
+    el.classList.add(
+      'hidden', 'px-4', 'py-1',
+      'border-1', 'border-gray-300', 'rounded-lg'
+    );
+  });
+
+  // Mobile Navigation Item Link
+  document.querySelectorAll('.mobile-nav-item-link').forEach(el => {
+    el.classList.add(
+      'block', 'py-2', 'text-sm',
+      'text-gray-800', 'text-left', 'hover:underline'
+    );
+  });
+
+  // Mobile Navigation Submenu Header
+  document.querySelectorAll('.mobile-nav-submenu-header').forEach(el => {
+    el.classList.add(
+      'w-full', 'py-2', 'text-sm',
+      'text-gray-800', 'text-left'
+    );
+  });
+
+  /* NAV BAR */
+
+  ////////////////////////////////////////////////////////////////////////////////////
 
   /* INDEX PAGE */
 
@@ -142,8 +330,8 @@ function applyGroupedClasses() {
   // News Card
   document.querySelectorAll('.news-card').forEach(el => {
     el.classList.add(
-      'bg-white', 'rounded-lg', 'shadow', 'overflow-hidden',
-      'flex', 'h-[180px]'
+      'bg-white', 'rounded-lg', 'shadow',
+      'overflow-hidden', 'flex'
     );
   });
 
@@ -181,14 +369,6 @@ function applyGroupedClasses() {
   document.querySelectorAll('.news-date').forEach(el => {
     el.classList.add(
       'text-sm', 'text-red-900', 'mt-2', 'block'
-    );
-  });
-
-
-  // News Link
-  document.querySelectorAll('.news-link').forEach(el => {
-    el.classList.add(
-      'text-red-900', 'mt-2', 'block', 'hover:underline'
     );
   });
 
@@ -432,6 +612,50 @@ function applyGroupedClasses() {
   ////////////////////////////////////////////////////////////////////////////////////
   
   /* FULL CONTENT PAGE */
+
+  // Left Sidebar
+  document.querySelectorAll('.left-sidebar').forEach(el => {
+    el.classList.add(
+      'left', 'border-2', 'border-gray-300', 'p-5', 'rounded-lg',
+      'order-2', 'lg:order-1', 'lg:w-1/5', 'flex-shrink-0', 'lg:block'
+    );
+  });
+
+  // Left Sidebar Heading
+  document.querySelectorAll('.left-sidebar-heading').forEach(el => {
+    el.classList.add(
+      'text-2xl', 'font-bold', 'text-[#A20000]', 'mb-4'
+    );
+  });
+
+  // Left Sidebar Ul
+  document.querySelectorAll('.left-sidebar-ul').forEach(el => {
+    el.classList.add(
+      'space-y-2', 'text-gray-800', 'list-inside'
+    );
+  });
+  
+  // Right Sidebar
+  document.querySelectorAll('.right-sidebar').forEach(el => {
+    el.classList.add(
+      'right', 'border-2', 'border-gray-300', 'p-5', 'rounded-lg',
+      'order-3', 'lg:order-3', 'lg:w-1/5', 'flex-shrink-0', 'lg:block'
+    );
+  });
+  
+  // Right Sidebar Heading
+  document.querySelectorAll('.right-sidebar-heading').forEach(el => {
+    el.classList.add(
+      'text-2xl', 'font-bold', 'text-[#A20000]', 'mb-4'
+    );
+  });
+  
+  //Right Sidebar Ul
+  document.querySelectorAll('.right-sidebar-ul').forEach(el => {
+    el.classList.add(
+      'space-y-2', 'text-gray-800', 'list-inside'
+    );
+  });
   
   // Page Main Heading 
   document.querySelectorAll('.page-main-heading').forEach(el => {
@@ -459,7 +683,14 @@ function applyGroupedClasses() {
   // Content Sub Content
   document.querySelectorAll('.content-sub-content').forEach(el => {
     el.classList.add(
-      'max-w-7xl', 'mx-auto', 'px-6', 'mb-20'
+      'max-w-7xl', 'mx-auto', 'px-6', 'mb-16'
+    );
+  });
+  
+  // Sub Content Banner
+  document.querySelectorAll('.sub-content-banner').forEach(el => {
+    el.classList.add(
+      'w-full', 'mb-12'
     );
   });
 
@@ -467,14 +698,14 @@ function applyGroupedClasses() {
   document.querySelectorAll('.sub-content-heading').forEach(el => {
     el.classList.add(
       'text-3xl', 'w-full', 'py-2', 'font-bold', 'text-gray-800',
-      'mb-8', 'mt-10', 'border-b-2', 'border-gray-300'
+      'mb-6', 'mt-2', 'border-b-2', 'border-gray-300'
     );
   });
 
   // Sub Content Text
   document.querySelectorAll('.sub-content-text').forEach(el => {
     el.classList.add(
-      'grid', 'grid-cols-1', 'md:grid-cols-1', 'gap-6', 'items-start'
+      'grid', 'grid-cols-1', 'md:grid-cols-1', 'gap-6', 'items-start', 'mb-12'
     );
   });
 
@@ -651,6 +882,508 @@ function applyGroupedClasses() {
   
   /* FULL CONTENT PAGE */
   
+  ////////////////////////////////////////////////////////////////////////////////////
+
+  /* CONTACT PAGE */
+
+  // Address Contact Form
+  document.querySelectorAll('.address-contact-form').forEach(el => {
+    el.classList.add(
+      'max-w-7xl', 'grid', 'lg:grid-cols-2', 'gap-10'
+    );
+  });
+
+  // Address Content
+  document.querySelectorAll('.address-content').forEach(el => {
+    el.classList.add(
+      'bg-white', 'p-8', 'rounded-2xl', 'shadow-lg',
+      'border-1', 'border-gray-300', 'space-y-6'
+    );
+  });
+
+  // Address Heading
+  document.querySelectorAll('.address-heading').forEach(el => {
+    el.classList.add(
+      'text-2xl', 'w-full', 'py-3', 'font-bold', 'text-gray-800',
+      'mb-5', 'border-b-2', 'border-gray-300'
+    );
+  });
+
+  // Red Link
+  document.querySelectorAll('.red-link').forEach(el => {
+    el.classList.add(
+      'text-red-900', 'hover:underline'
+    );
+  });
+
+  // Address Social Link
+  document.querySelectorAll('.address-social-link').forEach(el => {
+    el.classList.add(
+      'text-gray-800', 'align-middle', 'hover:text-red-800'
+    );
+  });
+
+
+  // Contact Form Content
+  document.querySelectorAll('.contact-form-content').forEach(el => {
+    el.classList.add(
+      'bg-white', 'p-8', 'rounded-2xl', 'shadow-lg', 'border-1', 'border-gray-300'
+    );
+  });
+
+  // Contact Form Heading
+  document.querySelectorAll('.contact-form-heading').forEach(el => {
+    el.classList.add(
+      'text-2xl', 'w-full', 'py-3', 'font-bold', 'text-gray-800',
+      'mb-5', 'border-b-2', 'border-gray-300'
+    );
+  });
+
+  // Contact Form Grid
+  document.querySelectorAll('.contact-form-grid').forEach(el => {
+    el.classList.add(
+      'grid', 'md:grid-cols-2', 'gap-4'
+    );
+  });
+
+  // Contact Form Text Box
+  document.querySelectorAll('.contact-form-text-box').forEach(el => {
+    el.classList.add(
+      'w-full', 'border', 'rounded-lg', 'px-4', 'py-2',
+      'border-1', 'border-gray-400', 'shadow-lg',
+      'focus:outline-none', 'focus:ring-1', 'focus:ring-gray-500'
+    );
+  });
+
+  // Contact Form Button
+  document.querySelectorAll('.contact-form-button').forEach(el => {
+    el.classList.add(
+      'w-full', 'bg-red-800', 'text-white', 'font-bold',
+      'py-2', 'px-4', 'rounded-lg', 'hover:bg-red-900', 'transition'
+    );
+  });
+
+  // Telephone Content
+  document.querySelectorAll('.telephone-content').forEach(el => {
+    el.classList.add(
+      'max-w-7xl', 'mx-auto', 'p-8', 'mb-20', 'bg-white',
+      'rounded-3xl', 'shadow-md', 'border-1', 'border-gray-300'
+    );
+  });
+
+  // Telephone Heading
+  document.querySelectorAll('.telephone-heading').forEach(el => {
+    el.classList.add(
+      'text-3xl', 'w-full', 'py-2', 'font-bold', 'text-gray-800',
+      'mb-8', 'border-b-2', 'border-gray-300', 'text-center'
+    );
+  });
+
+  // Telephone Sub Content
+  document.querySelectorAll('.telephone-sub-content').forEach(el => {
+    el.classList.add(
+      'shadow-lg', 'rounded-xl', 'border-2', 'border-gray-200', 'p-6'
+    );
+  });
+
+  // Telephone Sub Content Heading
+  document.querySelectorAll('.telephone-sub-content-heading').forEach(el => {
+    el.classList.add(
+      'text-xl', 'font-bold', 'text-gray-800', 'mb-4'
+    );
+  });
+
+  // Telephone Sub Content Ul
+  document.querySelectorAll('.telephone-sub-content-ul').forEach(el => {
+    el.classList.add(
+      'space-y-3', 'text-gray-700', 'ml-2', 'text-sm'
+    );
+  });
+
+  // Map Content
+  document.querySelectorAll('.map-content').forEach(el => {
+    el.classList.add(
+      'max-w-7xl', 'mx-auto', 'p-8', 'mb-20', 'bg-white',
+      'rounded-3xl', 'shadow-md', 'border', 'border-gray-300'
+    );
+  });
+
+  // Map Iframe
+  document.querySelectorAll('.map-iframe').forEach(el => {
+    el.classList.add(
+      'w-full', 'h-full', 'border-0', 'rounded-xl'
+    );
+  });
+
+  /* CONTACT PAGE */
+
+  ////////////////////////////////////////////////////////////////////////////////////
+
+  /* GALLERY PAGE */
+
+  // Gallery Grid
+  document.querySelectorAll('.gallery-grid').forEach(el => {
+    el.classList.add(
+      'grid', 'grid-cols-1', 'sm:grid-cols-2',
+      'md:grid-cols-3', 'lg:grid-cols-4', 'gap-4'
+    );
+  });
+
+  // Album Thumbnail
+  document.querySelectorAll('.album-thumbnail').forEach(el => {
+    el.classList.add(
+      'border', 'border-red-800', 'p-3',
+      'shadow-lg', 'rounded-lg', 'block', 'transform',
+      'transition-transform', 'duration-300', 'hover:scale-102'
+    );
+  });
+
+  // Album Caption
+  document.querySelectorAll('.album-caption').forEach(el => {
+    el.classList.add(
+      'mt-4', 'mb-6', 'font-semibold',
+      'text-lg', 'text-gray-900'
+    );
+  });
+
+  /* GALLERY PAGE */
+
+  ////////////////////////////////////////////////////////////////////////////////////
+
+  /* TIMELINE PAGE */
+
+  // Timeline Outer Wrapper
+  document.querySelectorAll('.timeline-outer-wrapper').forEach(el => {
+    el.classList.add(
+      'relative', 'border-l-4', 'border-red-900', 'ml-6'
+    );
+  });
+
+  // Timeline Year
+  document.querySelectorAll('.timeline-year').forEach(el => {
+    el.classList.add(
+      'flex', 'absolute', '-left-14', 'top-2', 'justify-center', 'items-center',
+      'w-16', 'h-16', 'bg-gray-300', 'rounded-full', 'ring-8', 'ring-gray-100',
+      'text-red-900', 'font-bold', 'text-lg'
+    );
+  });
+
+  // Timeline Year Block
+  document.querySelectorAll('.timeline-year-block').forEach(el => {
+    el.classList.add(
+      'mb-10', 'mt-10', 'ml-6', 'relative'
+    );
+  });
+  
+  // Timeline Events
+  document.querySelectorAll('.timeline-events').forEach(el => {
+    el.classList.add(
+      'mt-1', 'space-y-2', 'ml-2'
+    );
+  });
+
+  // Timeline Event
+  document.querySelectorAll('.timeline-event').forEach(el => {
+    el.classList.add(
+      'bg-gray-200', 'text-gray-800', 'p-3', 'rounded', 'shadow-md',
+      'border-2', 'border-gray-300', 'font-semibold'
+    );
+  });
+
+  // Timeline Date
+  document.querySelectorAll('.timeline-date').forEach(el => {
+    el.classList.add(
+      'text-red-600', 'mt-1', 'font-normal', 'text-sm'
+    );
+  });
+
+  /* TIMELINE PAGE */
+
+  ////////////////////////////////////////////////////////////////////////////////////
+
+  /* PAGINATION PAGE */
+
+  // Pagination Content
+  document.querySelectorAll('.pagination-content').forEach(el => {
+    el.classList.add(
+      'flex', 'flex-col', 'lg:flex-row', 'gap-4'
+    );
+  });
+
+  // Pagination Sidebar
+  document.querySelectorAll('.pagination-sidebar').forEach(el => {
+    el.classList.add(
+      'w-full', 'lg:w-1/3', 'bg-red-50', 'p-4',
+      'rounded-lg', 'shadow-md', 'border', 'border-gray-200'
+    );
+  });
+
+  // Pagination Sidebar Heading
+  document.querySelectorAll('.pagination-sidebar-heading').forEach(el => {
+    el.classList.add(
+      'text-xl', 'font-bold', 'mb-4',
+      'text-red-800', 'text-center'
+    );
+  });
+
+  // Pagination Event Item
+  document.querySelectorAll('.pagination-event-item').forEach(el => {
+    el.classList.add(
+      'w-full', 'text-left', 'p-3', 'text-red-900',
+      'bg-red-100', 'font-semibold', 'hover:bg-red-200', 'rounded'
+    );
+  });
+
+  // Pagination Events Description
+  document.querySelectorAll('.pagination-events').forEach(el => {
+    el.classList.add(
+      'flex', 'justify-center', 'mt-4', 'space-x-2'
+    );
+  });
+
+  // Pagination Event Content Area
+  document.querySelectorAll('.event-content-area').forEach(el => {
+    el.classList.add(
+      'flex-1', 'bg-white', 'p-10', 'rounded',
+      'shadow-md', 'border', 'border-gray-200', 'relative'
+    );
+  });
+
+  // Event Card
+  document.querySelectorAll('.event-card').forEach(el => {
+    el.classList.add(
+      'bg-white', 'rounded-lg', 'shadow-md',
+      'p-6', 'border', 'border-gray-200'
+    );
+  });
+
+  /* PAGINATION PAGE */
+
+  ////////////////////////////////////////////////////////////////////////////////////
+  
+  /* ADMIN & STAFF PAGE */
+
+  // Cards Grid (Two Columns)
+  document.querySelectorAll('.cards-grid-two').forEach(el => {
+    el.classList.add(
+      'grid', 'grid-cols-1', 'md:grid-cols-2',
+      'gap-6', 'mb-8'
+    );
+  });
+
+  // Cards Grid (One Column)
+  document.querySelectorAll('.cards-grid-one').forEach(el => {
+    el.classList.add(
+      'grid', 'grid-cols-1', 'md:grid-cols-1',
+      'gap-6', 'mb-8'
+    );
+  });
+
+  // Cards Grid - Five Columns
+  document.querySelectorAll('.cards-grid-five').forEach(el => {
+    el.classList.add(
+      'grid', 'grid-cols-1', 'sm:grid-cols-2', 'md:grid-cols-3', 'lg:grid-cols-5',
+      'gap-y-8', 'gap-x-4', 'mb-20', 'p-6'
+    );
+  });
+
+  // Big Image Card
+  document.querySelectorAll('.big-img-card').forEach(el => {
+    el.classList.add(
+      'bg-white', 'p-6', 'flex', 'flex-col', 'items-center', 'border-1', 'border-gray-400',
+      'rounded-xl', 'shadow-xl', 'w-full', 'max-w-md', 'mx-auto'
+    );
+  });
+
+  // Big Image Card - Image
+  document.querySelectorAll('.big-img-card-img').forEach(el => {
+    el.classList.add(
+      'w-full', 'aspect-square', 'object-cover',
+      'rounded-lg', 'mb-6'
+    );
+  });
+
+  // Big Image Card - Heading
+  document.querySelectorAll('.big-img-card-heading').forEach(el => {
+    el.classList.add(
+      'text-xl', 'font-bold', 'leading-tight',
+      'mb-2', 'text-center'
+    );
+  });
+
+  // Big Image Card - Text
+  document.querySelectorAll('.big-img-card-text').forEach(el => {
+    el.classList.add(
+      'text-md', 'text-gray-700', 'text-center'
+    );
+  });
+
+  // Small Image Card
+  document.querySelectorAll('.small-img-card').forEach(el => {
+    el.classList.add(
+      'bg-white', 'p-3', 'flex', 'flex-col', 'border-1', 'border-gray-400',
+      'items-center', 'rounded-lg', 'shadow-lg',
+      'w-full', 'max-w-sm', 'mx-auto'
+    );
+  });
+
+  // Small Image Card - Image
+  document.querySelectorAll('.small-img-card-img').forEach(el => {
+    el.classList.add(
+      'w-full', 'aspect-square', 'object-cover',
+      'rounded-lg', 'mb-4'
+    );
+  });
+
+  // Small Image Card Heading
+  document.querySelectorAll('.small-img-card-heading').forEach(el => {
+    el.classList.add(
+      'text-lg', 'sm:text-md', 'md:text-md',
+      'font-bold', 'leading-tight',
+      'mb-1', 'text-center'
+    );
+  });
+
+  // Small Image Card Text
+  document.querySelectorAll('.small-img-card-text').forEach(el => {
+    el.classList.add(
+      'text-sm', 'sm:text-sm', 'md:text-md',
+      'text-gray-700', 'text-center'
+    );
+  });
+  
+
+  // Modal User Box
+  document.querySelectorAll('.user-modal-box').forEach(el => {
+    el.classList.add(
+      'max-w-5xl', 'max-h-[90vh]',
+      'overflow-y-auto', 'p-6'
+    );
+  });
+
+  // User Modal Close Wrapper
+  document.querySelectorAll('.user-modal-close').forEach(el => {
+    el.classList.add(
+      'sticky', 'top-0', 'z-10', 'w-full',
+      'p-1', 'flex', 'justify-end'
+    );
+  });
+
+  // User Modal Close Button
+  document.querySelectorAll('.user-modal-close-btn').forEach(el => {
+    el.classList.add(
+      'btn', 'btn-sm', 'btn-circle', 'btn-ghost'
+    );
+  });
+
+  // User Modal Header
+  document.querySelectorAll('.user-modal-header').forEach(el => {
+    el.classList.add(
+      'flex', 'flex-col', 'md:flex-row', 'items-center',
+      'md:items-start', 'gap-6', 'mb-6'
+    );
+  });
+
+  // User Modal Image
+  document.querySelectorAll('.user-modal-img').forEach(el => {
+    el.classList.add(
+      'w-42', 'h-42', 'z-20',
+      'rounded-xl', 'object-cover', 'shadow-xl'
+    );
+  });
+
+  // User Modal Info Block
+  document.querySelectorAll('.user-modal-info').forEach(el => {
+    el.classList.add(
+      'text-center', 'md:text-left', 'text-gray-900'
+    );
+  });
+
+  // User Modal Card
+  document.querySelectorAll('.user-modal-card').forEach(el => {
+    el.classList.add(
+      'card', 'bg-base-200', 'shadow-md',
+      'mb-4', 'border-1', 'border-gray-300'
+    );
+  });
+
+  // User Modal Card Body
+  document.querySelectorAll('.user-modal-card-body').forEach(el => {
+    el.classList.add(
+      'card-body', 'p-4', 'text-left'
+    );
+  });
+
+  // User Modal Card Heading
+  document.querySelectorAll('.user-modal-card-heading').forEach(el => {
+    el.classList.add(
+      ''
+    );
+  });
+
+  // User Modal Card Bullet List
+  document.querySelectorAll('.user-modal-card-bullet').forEach(el => {
+    el.classList.add(
+      'list-disc', 'list-inside', '-ml-2',
+      'text-sm', 'space-y-1'
+    );
+  });
+
+  // Black Link
+  document.querySelectorAll('.black-link').forEach(el => {
+    el.classList.add(
+      'hover:underline', 'text-gray-900'
+    );
+  });
+
+  /* ADMIN & STAFF PAGE */
+
+  ////////////////////////////////////////////////////////////////////////////////////
+  
+  /* FOOTER */
+
+  // Footer Main Content
+  document.querySelectorAll('.footer-main-content').forEach(el => {
+    el.classList.add(
+      'text-white', 'pt-12',
+      'bg-gradient-to-r', 'from-[#4D0000]', 'via-[#A20000]', 'to-[#4D0000]'
+    );
+  });
+
+  // Footer Grid
+  document.querySelectorAll('.footer-grid').forEach(el => {
+    el.classList.add(
+      'grid', 'grid-cols-1', 'md:grid-cols-3',
+      'gap-12', 'p-10'
+    );
+  });
+
+  // Footer Column
+  document.querySelectorAll('.footer-column').forEach(el => {
+    el.classList.add(
+      'text-md', 'text-center',
+      'sm:text-center', 'md:text-left'
+    );
+  });
+
+  // Footer Column Heading
+  document.querySelectorAll('.footer-column-heading').forEach(el => {
+    el.classList.add(
+      'text-xl', 'font-bold', 'mb-4'
+    );
+  });
+
+  // Footer Ending
+  document.querySelectorAll('.footer-ending').forEach(el => {
+    el.classList.add(
+      'text-center', 'bg-gradient-to-r',
+      'from-[#4D0000]', 'via-[#A20000]', 'to-[#4D0000]',
+      'p-5', 'text-white', 'border-t', 'border-gray-200'
+    );
+  });
+
+  /* FOOTER */
+
   ////////////////////////////////////////////////////////////////////////////////////
 
 }

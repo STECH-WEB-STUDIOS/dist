@@ -1,3 +1,9 @@
+// Page loading
+// Reveal after JS finishes applying styles
+window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('invisible-until-ready');
+});
+
 // Home carousel
 const homeCarousel = document.getElementById('carousel');
 const totalSlides = homeCarousel.children.length;
